@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>원주고 학술제 시간표</title>
+</head>
+<body>
+    <img src="원주고등학교 로고.JPG" alt="원주고등학교 로고" width="20%">
+    <br>
+    <b>원주고 학술제 시간표</b>
+    <br>
+    <img src="2024 학술제 시간표.JPG" alt="학술제 시간표">
+</body>
+</html>
