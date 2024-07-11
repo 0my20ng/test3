@@ -2,47 +2,55 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>원주고 학술제 시간표</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원주고 학술제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            font-size: 30px;
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
         }
-        #logo {
-            float: left;
-        }
-        #logo img {
-            display: block;
-            height: 60px; /* 이미지 높이를 일정하게 유지 */
-        }
-        #top {
-            font-size: 30px;
-            float: right;
-            border: solid 1px black;
-            height: 60px; /* logo img 의 height랑 같게 */
+        .logo-container {
             display: flex;
+            justify-content: center;
             align-items: center;
-            padding: 0 10px; /* 텍스트와 테두리 사이의 여백 */
+            margin-bottom: 1rem; /* Tailwind CSS의 mb-4 여백 */
         }
-        #clear {
-            clear: both;
-        }
-        #schedule {
-            width: 100%;
+        .logo-container img {
+            width: 30%;
         }
     </style>
 </head>
-<body>
-    <div id="header">
-        <div id="logo">
-            <img src="원주고등학교 로고.JPG" alt="원주고등학교 로고" height="40">
+<body class="bg-white flex items-center justify-center min-h-screen">
+    <div class="border border-blue-500 p-6 rounded-lg shadow-lg text-center max-w-xs">
+        <div class="logo-container">
+            <img src="원주고등학교 로고.JPG" alt="원주고등학교 로고">
         </div>
-        <div id="top">
-            <a href="index.html">돌아가기</a>
+        <h1 class="text-center text-lg font-bold mb-6">제3회 학술제 일정표</h1>
+        <div class="mb-4">
+            <h2 class="text-blue-500 font-bold">1학년</h2>
+            <ul class="list-disc list-inside">
+                <li>1교시: OX퀴즈(체육관)</li>
+                <li>2교시: 부스체험(교실)</li>
+                <li>3교시: 주제발표회 참관(더블어홀)</li>
+                <li>4교시: 주제발표회 참관(더블어홀)</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="text-blue-500 font-bold">2,3학년</h2>
+            <ul class="list-disc list-inside">
+                <li>1교시: 부스준비(교실)</li>
+                <li>2교시: OX퀴즈(체육관)</li>
+                <li>3교시: 부스체험(교실)</li>
+                <li>4교시: 부스체험(교실)</li>
+            </ul>
+        </div>
+        <div class="flex items-center justify-center mt-6">
+            <a href="index.html" class="flex items-center text-gray-700">
+                <img src="https://img.icons8.com/ios-filled/50/000000/home.png" alt="Home" class="w-6 h-6 mr-2">
+                <span>홈으로</span>
+            </a>
         </div>
     </div>
-    <div id="clear"></div>
-    <b>원주고 학술제 시간표</b>
-    <br>
-    <img id="schedule" src="2024 학술제 시간표.JPG" alt="학술제 시간표">
 </body>
 </html>

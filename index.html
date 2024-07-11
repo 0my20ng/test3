@@ -2,14 +2,59 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>원주고등학교 학술제 홈페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원주고 학술제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem; /* Tailwind CSS의 mb-4 여백 */
+        }
+        .logo-container img {
+            width: 40%;
+        }
+        .text-gray-700 {
+            text-align: center;
+            color: #4a5568; /* Tailwind CSS의 gray-700 색상 */
+            font-size: 1rem; /* Tailwind CSS의 text-sm 크기 */
+            margin-top: 0.5rem; /* Tailwind CSS의 mt-2 여백 */
+        }
+        .main-title {
+            font-size: 2.0rem; /* 원하는 크기로 조정하세요 */
+            font-weight: bold;
+            margin-top: 0.5rem; /* 여백 조정 */
+        }
+    </style>
 </head>
-<body>
-    <img src="원주고등학교 로고.JPG" art="원주고 로고" width="20%">
-    <h1>원주고 학술제</h1>
-    <br>
-    <h2><strong>스스로 탐구하고 더불어 나누는<br>나의 재능으로 모두가 알차게</strong></h2>
-    <br>
-    <a href="schedule.html">시간표 확인</a> <a href="booth.html">부스 위치 확인</a>
+<body class="bg-white flex items-center justify-center min-h-screen">
+    <div class="border border-blue-500 p-6 rounded-lg shadow-lg text-center max-w-xs">
+        <div class="logo-container">
+            <img src="원주고등학교 로고.JPG" alt="원주고등학교 로고">
+        </div>
+        <div class="mb-4 main-title">
+            <div class="text-gray-700 text-x1 mt-2">제3회 학술제</div>
+        </div>
+        <div class="mb-6">
+            <div class="text-red-500 font-bold text-xl">스스로 탐구하고<br>더불어 나누는</div>
+            <div class="text-blue-500 font-bold text-lg mt-2">나의 재능으로<br>모두가 알차게</div>
+        </div>
+        <div class="flex justify-around items-center">
+            <a href="schedule.html" class="flex flex-col items-center text-gray-700">
+                <img width="64" height="64" src="https://img.icons8.com/wired/64/clock.png" alt="clock"/>
+                <span>일정</span>   
+            </a>
+
+            <a href="booths.html" class="flex flex-col items-center text-gray-700">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/map--v1.png" alt="map--v1"/>
+                <span>부스위치</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
