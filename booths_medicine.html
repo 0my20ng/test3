@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원주고 학술제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem; /* Tailwind CSS의 mb-4 여백 */
+        }
+        .logo-container img {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body class="bg-white flex items-center justify-center min-h-screen">
+    <div class="border border-blue-500 p-6 rounded-lg shadow-lg text-center max-w-xs">
+
+        <div class="flex justify-center mb-4">
+            <div class="logo-container">
+                <img src="원주고등학교 로고.JPG" alt="원주고등학교 로고">
+            </div>
+        </div>
+
+        <h1 class="text-center text-xl font-bold mb-6">제3회 학술제 의학부스</h1>
+
+        <div class="space-y-2">
+            <button onclick="location='booths_medicine_nightingale.html'" class="w-full py-2 border border-green-500 text-green-500 rounded-lg hover:bg-green-500 hover:text-white transition">나이팅게일 / 2-7</button>
+            <button onclick="location.href='booths_medicine_medico.html'" class="w-full py-2 border border-green-500 text-green-500 rounded-lg hover:bg-green-500 hover:text-white transition">메디코 / 2-8</button>
+            <button onclick="location.href='booths_medicine_sekmet.html'" class="w-full py-2 border border-green-500 text-green-500 rounded-lg hover:bg-green-500 hover:text-white transition">세크메트 / 2-9</button>
+            
+        </div>
+
+        <div class="flex justify-between mt-6">
+            <div class="flex items-center justify-center mt-6">
+                <a href="booths.html" class="flex items-center text-gray-700">
+                    <img width="30" height="30" src="https://img.icons8.com/ios/50/back--v1.png" alt="back--v1"/>
+                    <span>뒤로</span>
+                </a>
+            </div>
+
+            <div class="flex items-center justify-center mt-6">
+                <a href="index.html" class="flex items-center text-gray-700">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/home.png" alt="Home" class="w-6 h-6 mr-2">
+                    <span>홈으로</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
